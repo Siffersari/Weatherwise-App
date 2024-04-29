@@ -3,6 +3,7 @@ import { LocaleContext } from "../..";
 import { FormattedMessage } from "react-intl";
 import { FiGlobe } from "react-icons/fi";
 import "./Header.scss";
+import { getTimeSensitiveGreeting } from "../../utils";
 
 interface LocaleContextType {
   locale: string;
@@ -21,10 +22,7 @@ const Header: FC = () => {
   return (
     <header className="header">
       <div className="greeting">
-        <FormattedMessage
-          id="greeting.morning"
-          defaultMessage="Good morning,"
-        />
+        {getTimeSensitiveGreeting()}
         <span className="greeting-subtext">
           <FormattedMessage
             id="greeting.subtext"
