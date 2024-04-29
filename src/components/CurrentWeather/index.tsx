@@ -10,7 +10,7 @@ interface CurrentWeatherCardProps {
 }
 
 const CurrentWeatherCard: React.FC<CurrentWeatherCardProps> = ({ intl }) => {
-  const { weather, forecast, loading, error, fetchWeatherData } = useWeather();
+  const { weather, forecast, loading, error } = useWeather();
 
   const renderSkeleton = () => (
     <div className="current-weather-card skeleton-loading">
