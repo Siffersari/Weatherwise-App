@@ -1,0 +1,23 @@
+{
+  "greeting.morning": "Habari za asubuhi,",
+  "greeting.subtext": "hivi ndivyo siku yako inavyoonekana!",
+  "weatherHeader": "Hali ya Hewa Nairobi",
+  "temperature": "Joto",
+  "conditions": "Hali ya Hewa",
+  "switchToSwahili": "Badilisha kwenda Kiswahili",
+  "switchToEnglish": "Badilisha kwenda Kiingereza",
+  "weather.precipitation": "Kiwango cha mvua:",
+  "weather.humidity": "Unyevunyevu:",
+  "weather.wind": "Upepo:",
+  "weather.lightRain": "Mvua Nyepesi",
+  "weather.moderateRain": "Mvua ya Wastani",
+  "weather.heavyRain": "Mvua Kubwa",
+  "weather.clearSky": "Anga Safi",
+  "weather.fewClouds": "Mawingu Machache",
+  "forecast.title": "Utabiri wa Siku 5",
+  "sidebar.dashboard": "Dashibodi",
+  "sidebar.map": "Ramani",
+  "sidebar.calendar": "Kalenda",
+  "sidebar.settings": "Mipangilio",
+  "sidebar.logout": "Ondoka"
+}

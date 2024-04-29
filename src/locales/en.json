@@ -1,0 +1,23 @@
+{
+  "greeting.morning": "Good morning,",
+  "greeting.subtext": "here is how your day looks like!",
+  "weatherHeader": "Weather in Nairobi",
+  "temperature": "Temperature",
+  "conditions": "Weather Conditions",
+  "switchToSwahili": "Switch to Kiswahili",
+  "switchToEnglish": "Switch to English",
+  "weather.precipitation": "Precipitation:",
+  "weather.humidity": "Humidity:",
+  "weather.wind": "Wind:",
+  "weather.lightRain": "Light Rain",
+  "weather.moderateRain": "Moderate Rain",
+  "weather.heavyRain": "Heavy Rain",
+  "weather.clearSky": "Clear Sky",
+  "weather.fewClouds": "Few Clouds",
+  "forecast.title": "5-day forecast",
+  "sidebar.dashboard": "Dashboard",
+  "sidebar.map": "Map",
+  "sidebar.calendar": "Calendar",
+  "sidebar.settings": "Settings",
+  "sidebar.logout": "Log Out"
+}

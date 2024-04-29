@@ -1,19 +1,42 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState } from "react";
+import ReactDOM from "react-dom/client";
+import "./styles/index.scss";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { IntlProvider } from "react-intl";
+import English from "./locales/en.json";
+import Swahili from "./locales/sw.json";
+
+interface LocaleContextType {
+  locale: string;
+  setLocale: React.Dispatch<React.SetStateAction<string>>;
+}
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
+
+export const LocaleContext = React.createContext<LocaleContextType | null>(
+  null
+);
+
+const Main = () => {
+  const [locale, setLocale] = useState("en");
+  const messages = locale === "sw" ? Swahili : English;
+
+  return (
+    <LocaleContext.Provider value={{ locale, setLocale }}>
+      <IntlProvider locale={locale} messages={messages}>
+        <App />
+      </IntlProvider>
+    </LocaleContext.Provider>
+  );
+};
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Main />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

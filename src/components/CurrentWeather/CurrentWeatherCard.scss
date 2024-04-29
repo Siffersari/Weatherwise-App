@@ -1,0 +1,114 @@
+.current-weather-card {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 20px;
+  border-radius: 20px;
+  background-size: cover;
+  color: white;
+  max-width: 80vw;
+  margin: 20px;
+
+  .weather-details-container {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-self: start;
+
+    .weather-icon {
+      img {
+        width: 60px;
+      }
+    }
+
+    .weather-description {
+        text-transform: capitalize;
+        font-size: 0.8em;
+    }
+
+    .temperature {
+      font-size: 3.3em;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    color: rgb(90, 89, 89);
+
+    .stat-value {
+      opacity: 1;
+      color: white;
+    }
+  }
+
+  .location-and-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    .location {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  }
+
+  .date-time {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .time {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .date {
+      font-size: 1em;
+    }
+  }
+
+  .hourly-updates {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    grid-column: 1 / -1;
+
+    .hourly-item {
+      min-width: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px;
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+      &:last-child {
+        border-right: none;
+      }
+
+      .hour {
+        font-size: 0.85em;
+        color: #fff;
+      }
+
+      img {
+        width: 40px;
+      }
+
+      .hourly-temp {
+        font-size: 0.95em;
+        color: #fff;
+      }
+    }
+  }
+}
