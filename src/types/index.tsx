@@ -35,7 +35,6 @@ export interface Forecast {
   };
   dt_txt: string;
 }
-
 export interface WeatherCondition {
   id: number;
   main: string;
@@ -61,7 +60,6 @@ export interface Wind {
   gust: number;
 }
 
-
 export interface WeatherData {
   weather: {
     [key: number]: {
@@ -83,8 +81,6 @@ export interface WeatherData {
   };
   name: string;
 }
-
-
 export interface HourlyForecastItem {
   dt: number;
   dt_txt: string;
