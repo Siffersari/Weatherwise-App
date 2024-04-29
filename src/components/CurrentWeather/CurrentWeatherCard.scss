@@ -23,8 +23,8 @@
     }
 
     .weather-description {
-        text-transform: capitalize;
-        font-size: 0.8em;
+      text-transform: capitalize;
+      font-size: 0.8em;
     }
 
     .temperature {
@@ -110,5 +110,51 @@
         color: #fff;
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    .stats {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: rgb(90, 89, 89);
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+}
+
+.current-weather-card.skeleton-loading {
+  .weather-details-container,
+  .stats,
+  .location-and-time,
+  .hourly-updates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .weather-icon.skeleton,
+  .weather-description.skeleton,
+  .temperature.skeleton,
+  .precipitation.skeleton,
+  .humidity.skeleton,
+  .wind.skeleton,
+  .location.skeleton,
+  .time.skeleton,
+  .date.skeleton {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .hourly-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hour.skeleton,
+  .weather-icon.skeleton,
+  .hourly-temp.skeleton {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
