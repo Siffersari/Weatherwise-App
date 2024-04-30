@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Weatherwise-App/static/css/main.aa7edf5a.css",
+    "main.js": "/Weatherwise-App/static/js/main.ff61d66d.js",
+    "static/js/453.dace7088.chunk.js": "/Weatherwise-App/static/js/453.dace7088.chunk.js",
+    "static/media/night.png": "/Weatherwise-App/static/media/night.cd2babd8d54118e00c70.png",
+    "static/media/logo.png": "/Weatherwise-App/static/media/logo.da30e876cb7d9684b35a.png",
+    "static/media/day.png": "/Weatherwise-App/static/media/day.42c8c197c5d9224ab44d.png",
+    "index.html": "/Weatherwise-App/index.html",
+    "main.aa7edf5a.css.map": "/Weatherwise-App/static/css/main.aa7edf5a.css.map",
+    "main.ff61d66d.js.map": "/Weatherwise-App/static/js/main.ff61d66d.js.map",
+    "453.dace7088.chunk.js.map": "/Weatherwise-App/static/js/453.dace7088.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa7edf5a.css",
+    "static/js/main.ff61d66d.js"
+  ]
+}
