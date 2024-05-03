@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# Multilingual Weather Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A weather dashboard showcasing current conditions in Nairobi, Kenya with seamless English and Swahili language support. Built using React and the OpenWeatherMap API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+Multilingual Support: Effortlessly switch between English and Swahili for a localized experience.
 
-### `npm start`
+Current Weather Data: Displays up-to-date temperature, humidity, and wind speed for Nairobi.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Responsive Design: Provides optimal viewing on desktops, tablets, and mobile devices.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+Node.js (version 12.x or later)
+npm (Node Package Manager)
+An API key from OpenWeatherMap (https://openweathermap.org/appid)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone https://github.com/Siffersari/Weatherwise-App.git
+cd Weatherwise-App
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
 
-### `npm run eject`
+API Key Setup:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+Create a .env file in the project's root directory.
+Add the following line, replacing with your actual key:
+REACT_APP_API_KEY=your_openweathermap_api_key_here
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Running the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The dashboard will launch in your browser, typically at http://localhost:3000.
 
-## Learn More
+## Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm test
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Explanation: Add a section here to describe what your tests cover (e.g., component rendering, language switching functionality, API data fetching).
+
+## Using the Dashboard
+
+Language Toggle: Use the provided language toggle (e.g., a button or dropdown) to switch between English and Swahili.
+
+Weather Display: Current temperature, humidity, and wind speed for Nairobi will be prominently displayed. Consider adding a weather icon for visual representation.
+
+## Contributing
+
+We welcome contributions! Here's how:
+
+Fork the repository.
+
+Create a descriptive branch: git checkout -b <branch_name>
+
+Implement your changes and commit: git commit -m '<commit_message>'
+
+Push to your branch: git push origin <project_name>/<location>
+
+Submit a pull request.
+
+## Contributors
+
+@Siffersari
+
+## Contact
+
+For questions or feedback, reach out at leewelkarani@gmail.com.
